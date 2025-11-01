@@ -44,8 +44,8 @@ st.subheader("Selected Options")
 st.write(df)
 
 
-test = pd.read_csv(r"C:\Users\Admin\Downloads\Logistic Regression (1)\Logistic Regression\Titanic_test.csv")
-train = pd.read_csv(r"C:\Users\Admin\Downloads\Logistic Regression (1)\Logistic Regression\Titanic_train.csv")
+test = pd.read_csv(r'Titanic_test.csv')
+train = pd.read_csv(r'Titanic_train.csv')
 
 ### Removing the unwanted columns ### 
 
@@ -80,6 +80,7 @@ st.write("The person **survived**" if prediction_probabilities[0][1] > 0.5 else 
 
 st.subheader("Prediction Probability")
 st.write(prediction_probabilities)
+
 
 
 
