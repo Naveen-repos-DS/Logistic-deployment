@@ -76,9 +76,10 @@ yhat = model.predict(df)
 prediction_probabilities = model.predict_proba(df)
 
 st.subheader("Predicted Results")
-st.write("🟩 The person **survived**" if prediction_probabilities[0][1] > 0.5 else "🟥 The person **did not survive**")
+st.write("The person **survived**" if prediction_probabilities[0][1] > 0.5 else "The person **did not survive**")
 
 st.subheader("Prediction Probability")
 st.write(prediction_probabilities)
+
 
 
